@@ -14,15 +14,12 @@ AMyActor::AMyActor()
 void AMyActor::BeginPlay()
 {
 	Super::BeginPlay();
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, "Hello");
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, "Hello from Unreal Engine!");
 }
 
 // Called every frame
 void AMyActor::Tick(float DeltaTime) 
 {
 	Super::Tick(DeltaTime);
-	static int i = 1;
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, "Tick " + FString::FromInt(i));
-	i++;
 }
 
